@@ -16,5 +16,17 @@
 		"username" : "Dilshod",
 		"password" : "1111",
 		"userimg" : "/images/dil.jpg"
+	},
+	{
+		"userId":4,
+		"username" : "Jamshid",
+		"password" : "8484848",
+		"userimg" : "/images/jam.jpg"
+	},
+	{
+		"userId":5,
+		"username" : "Xurshid",
+		"password" : "198484",
+		"userimg" : "/images/xur.jpg"
 	}
 ]

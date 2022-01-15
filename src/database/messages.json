@@ -4,7 +4,7 @@
 		"userId" : 1,
 		"useridTo" : 2,
 		"messageType" : "text",
-		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time) {}",
+		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time)",
 		"file" : "ishlar qalay Bahodir"
 	},
 	{
@@ -12,7 +12,7 @@
 		"userId" : 2,
 		"useridTo" : 1,
 		"messageType" : "text",
-		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time) {}",
+		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time)",
 		"file" : "yaxshi raxmat!"
 	},
 	{
@@ -20,7 +20,7 @@
 		"userId" : 3,
 		"useridTo" : 1,
 		"messageType" : "text",
-		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time) {}",
+		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time)",
 		"file" : "Doston men Dilshodman"
 	},
 	{
@@ -28,8 +28,16 @@
 		"userId" : 2,
 		"useridTo" : 1,
 		"messageType" : "text",
-		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time) {}",
+		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time)",
 		"file" : "String ishlamay qoldi!"
+	},
+	{
+		"messageId" :5,
+		"userId" : 1,
+		"useridTo" : 3,
+		"messageType" : "text",
+		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time) {}",
+		"file" : "EEE dilshod bormisz polvontosh"
 	}
 
 
