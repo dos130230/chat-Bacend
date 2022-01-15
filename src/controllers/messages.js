@@ -14,8 +14,27 @@ const GET = (req,res) => {
 }
 
 
+
+
+
+const POST = (req,res) => {
+	try{
+		const {useridTo} = (req.body)
+		if(!useridTo) throw new Error("useridTo kirtish kerak!")
+
+	const { originalname, mimetype,  buffer, size} = (req.file)	
+	console.log(mimetype)
+
+	}catch(error){
+		res.send(error.message)
+	}
+}
+
+
+
 export default {
-	GET
+	GET,
+	POST
 }
 
 

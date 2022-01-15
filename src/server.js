@@ -2,6 +2,8 @@ import express from "express"
 const PORT = process.env.PORT || 5000
 const app = express()
 
+app.use( express.json() )
+
 
 
 // loading model json read and write
@@ -14,6 +16,9 @@ app.use("/users",userRouter)
 
 import messageRouter from "./routes/messages.js"
 app.use("/messages",messageRouter)
+
+import authRouter from "./routes/auth.js"
+app.use("/auth",authRouter)
 
 
 
