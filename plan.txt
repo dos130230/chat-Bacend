@@ -1,0 +1,89 @@
+1) npm pacets install 
+
+ 	*express*
+ 	*jsonwebtoken*
+ 	*multer*
+ 	*sha256*
+ 	*joi*
+ 	*cors*
+
+
+2) data - model
+
+	users (userId, username, userimg, password)
+	messages (messageId, userId,useridTo, file ,type )
+
+
+
+	 
+	[
+		{
+			userId:1,
+			username : "Dostonbek",
+			userimg : "/images/dosya.jpg",
+			password : "130230"
+		},
+		{
+			userId:2,
+			username : "Bahodir",
+			userimg : "/images/baho.jpg",
+			password : "20211606"
+		},
+		{
+			userId:3,
+			username : "Dilshod",
+			userimg : "/images/dil.jpg",
+			password : "1111"
+		}
+	]
+
+
+	[
+		{
+			messageId :1,
+			userId : 1,
+			useridTo : 2,
+			type : text,
+			file : "ishlar qalay Bahodir"
+		},
+		{
+			messageId :2,
+			userId : 2,
+			useridTo : 1,
+			type : text,
+			file : "yaxshi raxmat!"
+		},
+		{
+			messageId :3,
+			userId : 3,
+			useridTo : 1,
+			type : text,
+			file : "Doston men Dilshodman"
+		},
+		{
+			messageId :4,
+			userId : 2,
+			useridTo : 1,
+			type : text,
+			file : "String ishlamay qoldi!"
+		}
+
+
+	]
+
+
+3) routers
+	
+	/users
+		GET /                                 (allUser send)
+		GET /frendUser
+
+
+	/message 
+		GET   /:userId  | yuborish (token) | yuborishda ichiga qo'sh ( { who: me|you } )
+		POST  /  {userId,type,file} and headres.token  yuborasan
+
+	/auth
+		POST /login (username, password)
+		POST /register (username, password,file)
+

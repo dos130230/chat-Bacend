@@ -1,0 +1,20 @@
+[
+	{
+		"userId":1,
+		"username" : "Dostonbek",
+		"password" : "130230",
+		"userimg" : "/images/dosya.jpg"
+	},
+	{
+		"userId":2,
+		"username" : "Bahodir",
+		"password" : "20211606",
+		"userimg" : "/images/baho.jpg"
+	},
+	{
+		"userId":3,
+		"username" : "Dilshod",
+		"password" : "1111",
+		"userimg" : "/images/dil.jpg"
+	}
+]

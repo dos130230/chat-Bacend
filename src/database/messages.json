@@ -1,0 +1,36 @@
+[
+	{
+		"messageId" :1,
+		"userId" : 1,
+		"useridTo" : 2,
+		"messageType" : "text",
+		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time) {}",
+		"file" : "ishlar qalay Bahodir"
+	},
+	{
+		"messageId" :2,
+		"userId" : 2,
+		"useridTo" : 1,
+		"messageType" : "text",
+		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time) {}",
+		"file" : "yaxshi raxmat!"
+	},
+	{
+		"messageId" :3,
+		"userId" : 3,
+		"useridTo" : 1,
+		"messageType" : "text",
+		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time) {}",
+		"file" : "Doston men Dilshodman"
+	},
+	{
+		"messageId" :4,
+		"userId" : 2,
+		"useridTo" : 1,
+		"messageType" : "text",
+		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time) {}",
+		"file" : "String ishlamay qoldi!"
+	}
+
+
+]
