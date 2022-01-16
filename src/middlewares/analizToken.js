@@ -1,20 +1,19 @@
 import myJwt from "../utils/jwd.js"
+import {ServerError ,ClentError} from "../utils/errorHandling.js"
 
  export default (req,res,next) => {
 	try {
-
 		const {token} = req.headers
 
 		if (!token) {
-			throw new Error ("token kiritish kerak!")
+			throw new ClentError(400,"Token kiritish kerak!")
 		}
 		const {userId,agent} = myJwt.verify(token)
-		console.log(userId,agent)
 
 
-		if(req.headers['user-agent']!== agent) {
-			throw new Error("Rasvo token!")
-		}
+		// if(req.headers['user-agent']!== agent) {
+		// 	throw new Error("Rasvo token!")
+		// }
 		req.userId = userId
 
 		return next()
@@ -22,9 +21,7 @@ import myJwt from "../utils/jwd.js"
 	}catch (error){
 		if(error.message=="invalid signature"){
 			return res.status(404).send(error)
-		}
-		res.send(error.message)
-		return next(error)
+		}else return next(error)
 	}
 
 }

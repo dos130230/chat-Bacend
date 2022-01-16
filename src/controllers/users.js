@@ -1,17 +1,17 @@
 const GET = (req,res) => {
-	const users = req.select("users")
-	const frends = req.select("frends")
-	console.log(req.url)
+	try{
+		const users = req.select("users")
+		const frends = req.select("frends")
 
-	if(req.url == "/frendUser"){
-		let user = users.filter( user => frends[1].includes(user.userId))
-		return res.json(user)
-	}else {
+		if(req.url == "/frendUser"){
+			let user = users.filter( user => frends[req.userId].includes(user.userId))
+			return res.json(user)
 
-		return res.json(users)
+		}else return res.json(users)
+		
+	}catch(error){
+		return next(error)
 	}
-
-
 }
 
 

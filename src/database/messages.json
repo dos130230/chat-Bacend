@@ -1,44 +1,42 @@
 [
-	{
-		"messageId" :1,
-		"userId" : 1,
-		"useridTo" : 2,
-		"messageType" : "text",
-		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time)",
-		"file" : "ishlar qalay Bahodir"
-	},
-	{
-		"messageId" :2,
-		"userId" : 2,
-		"useridTo" : 1,
-		"messageType" : "text",
-		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time)",
-		"file" : "yaxshi raxmat!"
-	},
-	{
-		"messageId" :3,
-		"userId" : 3,
-		"useridTo" : 1,
-		"messageType" : "text",
-		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time)",
-		"file" : "Doston men Dilshodman"
-	},
-	{
-		"messageId" :4,
-		"userId" : 2,
-		"useridTo" : 1,
-		"messageType" : "text",
-		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time)",
-		"file" : "String ishlamay qoldi!"
-	},
-	{
-		"messageId" :5,
-		"userId" : 1,
-		"useridTo" : 3,
-		"messageType" : "text",
-		"messageDete" : "Sat Jan 15 2022 10:36:07 GMT+0500 (Uzbekistan Standard Time) {}",
-		"file" : "EEE dilshod bormisz polvontosh"
-	}
-
-
+    {
+        "messageId": 1,
+        "userId": 3,
+        "useridTo": 2,
+        "messageType": "text",
+        "messageDete": "2022-01-16T03:38:12.020Z",
+        "file": "Men  dilshodman doston tanidizmi"
+    },
+    {
+        "messageId": 2,
+        "userId": 3,
+        "useridTo": 1,
+        "messageType": "text",
+        "messageDete": "2022-01-16T03:50:57.675Z",
+        "file": "Nima gap bohho"
+    },
+    {
+        "messageId": 3,
+        "userId": 3,
+        "useridTo": 2,
+        "messageType": "text",
+        "messageDete": "2022-01-16T03:52:22.006Z",
+        "file": "ha doston qoshildimi"
+    },
+    {
+        "messageId": 4,
+        "userId": 2,
+        "useridTo": 1,
+        "messageType": "text",
+        "messageDete": "2022-01-16T05:18:33.229Z",
+        "file": "ha endi men doston sifatida kirdim"
+    },
+    {
+        "messageId": 5,
+        "userId": 2,
+        "useridTo": 1,
+        "messageType": "video/mp4",
+        "messageDete": "2022-01-16T05:45:03.974Z",
+        "file": "/others/1642311903972qori.mp4"
+    }
 ]

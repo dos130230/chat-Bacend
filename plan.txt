@@ -13,8 +13,6 @@
 	users (userId, username, userimg, password)
 	messages (messageId, userId,useridTo, file ,type )
 
-
-
 	 
 	[
 		{
@@ -75,16 +73,46 @@
 3) routers
 	
 	/users
-		GET /               (allUser send)
+		GET /   (allUser send)
 		GET /frendUser
-		POST / {username,password ,file}
 
 
 	/message 
 		GET   /:userId  | yuborish (token) | yuborishda ichiga qo'sh ( { who: me|you } )
-		POST  /  {userId,type,file} and headres.token  yuborasan
+		POST  / {userId,type,file} and headres.token  yuborasan
 
 	/auth
 		POST /login (username, password)
 		POST /register (username, password,file)
+
+
+
+4) Error handling
+
+		400 Bad Request
+		401 Unauthorized
+		402 Payment Required
+		403 Forbidden
+		404 Not Found
+		405 Method Not Allowed
+		406 Not Acceptable
+		407 Proxy Authentication Required
+		408 Request Timeout
+		409 Conflict
+		410 Gone
+		411 Length Required
+		412 Precondition Failed
+		413 Payload Too Large
+		414 URI Too Long
+		415 Unsupported Media Type
+		416 Range Not Satisfiable
+		417 Expectation Failed
+		418 I'm a teapot
+		422 Unprocessable Entity
+		425 Too Early
+		426 Upgrade Required
+		428 Precondition Required
+		429 Too Many Requests
+		431 Request Header Fields Too Large
+		451 Unavailable For Legal Reasons
 

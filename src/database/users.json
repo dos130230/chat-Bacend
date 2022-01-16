@@ -1,38 +1,20 @@
 [
     {
         "userId": 1,
-        "username": "Dostonbek",
-        "password": "e74fc542917c4d1d4a77422cc4635c4e95a68c3c4bb2fdb52b895ac53451672b",
-        "userimg": "/images/dosya.jpg"
+        "username": "bahodir",
+        "password": "afeaa4347e3f11453d6166bff573b211776069cb156c236db0402a758148b776",
+        "userimg": "/images/1642303252616Screenshotfrom2021-12-1222-37-20.png"
     },
     {
         "userId": 2,
-        "username": "Bahodir",
-        "password": "a2d3406bcc403b06244c802119d207c9f5accd7b77e7d3abb6fe222fdaa570ca",
-        "userimg": "/images/baho.jpg"
+        "username": "dostonbek",
+        "password": "8bdf12799ba37c34018a2f1148993a20f16ba037dc5c81b86a9c52f7ed39cb74",
+        "userimg": "/images/1642304130484git(2).png"
     },
     {
         "userId": 3,
-        "username": "Dilshod",
-        "password": "b04f3b27ec089d13b112fffb2ce91e1d1cc0ba762dce1588c2a8f69bd6f87d58",
-        "userimg": "/images/dil.jpg"
-    },
-    {
-        "userId": 4,
-        "username": "Jamshid",
-        "password": "18fbba236f5c0743caaa029726bd1a9d00882015a69de422142a190db7a7cbcb",
-        "userimg": "/images/jam.jpg"
-    },
-    {
-        "userId": 5,
-        "username": "Xurshid",
-        "password": "dcdd9e9c60bdc281c3f4a2965b2f2d00a1e4e7c17715519d93de9753c95cd669",
-        "userimg": "/images/xur.jpg"
-    },
-    {
-        "userId": 6,
-        "username": "donishmand",
-        "password": "ebb685944a64cf23d983c0b6c6ef7aa40f479919268cdf14f4a6ffea9a1b87d7",
-        "userimg": "/images/16422423076922190970.jpg"
+        "username": "dilshod",
+        "password": "38ee344c6b8a5fa0cfb2df3b72b9289d0b0d80a58873aec13fa7d6809b36aa19",
+        "userimg": "/images/16423041817032190970.jpg"
     }
 ]

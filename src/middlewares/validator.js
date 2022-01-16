@@ -1,5 +1,5 @@
 import Joi from "joi"
-
+import {ServerError ,ClentError} from "../utils/errorHandling.js"
 
 let regSchema = Joi.object({
 	username: Joi.string().max(30).alphanum().required(),
@@ -8,19 +8,14 @@ let regSchema = Joi.object({
 
 const registerValidator = (req,res,next) => {
 	try{
-
 		const {value,error} = regSchema.validate(req.body)
-		if (error) throw new Error(error.message)
+		if (error) throw new ClentError(400,error.message)
 
-			return next()
-
-	}catch(error){
-		res.send(error.message)
 		return next()
 
+	}catch(error){
+		return next()
 	}
-
-
 }
 
 export default  {
