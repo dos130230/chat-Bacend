@@ -1,42 +1,122 @@
 [
     {
         "messageId": 1,
-        "userId": 3,
-        "useridTo": 2,
+        "userId": 2,
+        "useridTo": 1,
         "messageType": "text",
-        "messageDete": "2022-01-16T03:38:12.020Z",
-        "file": "Men  dilshodman doston tanidizmi"
+        "messageDete": "2022-01-17T20:19:25.190Z",
+        "file": "Bordimi yozuv"
     },
     {
         "messageId": 2,
-        "userId": 3,
-        "useridTo": 1,
+        "userId": 1,
+        "useridTo": 2,
         "messageType": "text",
-        "messageDete": "2022-01-16T03:50:57.675Z",
-        "file": "Nima gap bohho"
+        "messageDete": "2022-01-17T20:19:41.549Z",
+        "file": "keldi ha"
     },
     {
         "messageId": 3,
-        "userId": 3,
-        "useridTo": 2,
+        "userId": 2,
+        "useridTo": 1,
         "messageType": "text",
-        "messageDete": "2022-01-16T03:52:22.006Z",
-        "file": "ha doston qoshildimi"
+        "messageDete": "2022-01-17T20:24:07.242Z",
+        "file": "Nima gaplar polvon"
     },
     {
         "messageId": 4,
         "userId": 2,
         "useridTo": 1,
         "messageType": "text",
-        "messageDete": "2022-01-16T05:18:33.229Z",
-        "file": "ha endi men doston sifatida kirdim"
+        "messageDete": "2022-01-17T20:25:06.578Z",
+        "file": "Ha polvontosh"
     },
     {
         "messageId": 5,
+        "userId": 1,
+        "useridTo": 2,
+        "messageType": "text",
+        "messageDete": "2022-01-17T20:25:15.700Z",
+        "file": "ha"
+    },
+    {
+        "messageId": 6,
+        "userId": 3,
+        "useridTo": 2,
+        "messageType": "text",
+        "messageDete": "2022-01-17T20:26:41.797Z",
+        "file": "nima gap"
+    },
+    {
+        "messageId": 7,
+        "userId": 3,
+        "useridTo": 2,
+        "messageType": "text",
+        "messageDete": "2022-01-17T20:27:03.796Z",
+        "file": "keldimi"
+    },
+    {
+        "messageId": 8,
+        "userId": 3,
+        "useridTo": 2,
+        "messageType": "image/png",
+        "messageDete": "2022-01-17T20:27:18.968Z",
+        "file": "/others/1642451238965Screenshotfrom2021-11-1508-57-34.png"
+    },
+    {
+        "messageId": 9,
         "userId": 2,
-        "useridTo": 1,
+        "useridTo": 3,
+        "messageType": "text",
+        "messageDete": "2022-01-17T20:30:00.758Z",
+        "file": "Bordimi"
+    },
+    {
+        "messageId": 10,
+        "userId": 2,
+        "useridTo": 3,
+        "messageType": "image/jpeg",
+        "messageDete": "2022-01-17T20:30:18.633Z",
+        "file": "/others/1642451418630Screenshot_20220114-232312_YouTube.jpg"
+    },
+    {
+        "messageId": 11,
+        "userId": 2,
+        "useridTo": 3,
         "messageType": "video/mp4",
-        "messageDete": "2022-01-16T05:45:03.974Z",
-        "file": "/others/1642311903972qori.mp4"
+        "messageDete": "2022-01-17T20:31:03.843Z",
+        "file": "/others/1642451463829IMG_20220108_180957_959.mp4"
+    },
+    {
+        "messageId": 12,
+        "userId": 4,
+        "useridTo": 3,
+        "messageType": "text",
+        "messageDete": "2022-01-17T21:03:27.673Z",
+        "file": "Ketdimi"
+    },
+    {
+        "messageId": 13,
+        "userId": 4,
+        "useridTo": 3,
+        "messageType": "text",
+        "messageDete": "2022-01-17T21:07:55.787Z",
+        "file": "Ishlayaptimi"
+    },
+    {
+        "messageId": 14,
+        "userId": 3,
+        "useridTo": 4,
+        "messageType": "text",
+        "messageDete": "2022-01-17T21:08:05.021Z",
+        "file": "ha"
+    },
+    {
+        "messageId": 15,
+        "userId": 3,
+        "useridTo": 4,
+        "messageType": "video/mp4",
+        "messageDete": "2022-01-17T21:08:23.919Z",
+        "file": "/others/16424537039141641981828983qori.mp4"
     }
 ]

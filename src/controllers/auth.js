@@ -12,9 +12,10 @@ const LOGIN = (req,res,next) => {
 
 		let users = req.select("users")
 		let found = users.find( user => user.username == username && user.password == sha256(password))
+		
 		if(!found) throw new ClentError(404,"username yoki password hafli!")
 
-		return res.status(200).json({ messages: "OK LOGIN",token: myJwt.sign({userId : found.userId,agent: req.headers['user-agent']})})
+		return res.status(200).json({ messages: "OK LOGIN",token: myJwt.sign({userId : found.userId,agent: req.headers['user-agent']}),profilImg:found.userimg})
 
 	}catch(error){
 		return next(error)
@@ -66,7 +67,7 @@ const REGISTER = (req,res,next) => {
 			delete newUser.password
 
 
-			res.status(201).json({ message : "OK REGISTER" ,data : newUser,token: myJwt.sign({userId:newUser.userId,agent: req.headers['user-agent']})})
+			res.status(201).json({ message : "OK REGISTER" ,data : newUser,token: myJwt.sign({userId:newUser.userId,agent: req.headers['user-agent']}),profilImg:newUser.userimg})
 
 	}catch(error){
 		return next(error)

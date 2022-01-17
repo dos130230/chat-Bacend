@@ -1,10 +1,10 @@
 import {ServerError ,ClentError} from "../utils/errorHandling.js"
+import dataConveter from "../utils/dataConverter.js"
 import path from "path"
 import fs from "fs"
 
 const GET = (req,res,next) => {
 	try{
-
 		let mes = req.select("messages")
 
 		let meini_Id = req.userId
@@ -13,8 +13,9 @@ const GET = (req,res,next) => {
 		let uni_id = id
 
 		mes = mes.filter( el => {
+			el.messageDete = dataConveter(el.messageDete)
 			if((el.useridTo == uni_id && el.userId == meini_Id) || (el.useridTo == meini_Id && el.userId == uni_id)){
-				return el.person = el.userId ==meini_Id ?"me" : "you"
+				return el.person = el.userId ==meini_Id ?"sender" : "receiver"
 			}
 		})
 
@@ -57,13 +58,13 @@ const POST = (req,res) => {
 				"userId" : req.userId,
 				"useridTo" : +useridTo,
 				"messageType" : type,
-				"messageDete" : new Date(),
+				"messageDete" :new Date(),
 				"file" : textSend
 
 			}
 			allMes.push(newMess)
 
-
+			
 			req.insert("messages",allMes)
 
 			return res.status(201).json({ messages: "Xabar qo'shildi!" ,data : newMess})

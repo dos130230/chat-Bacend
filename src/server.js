@@ -11,6 +11,9 @@ import {ServerError ,ClentError} from "./utils/errorHandling.js"
 app.use( express.json() )
 app.use( cors())
 
+// loading static file
+app.use(express.static(path.join(process.cwd(),"files")))
+
 // loading utils
 import timeConverter from "./utils/dataConverter.js"
 
@@ -29,9 +32,17 @@ app.use("/messages",messageRouter)
 import authRouter from "./routes/auth.js"
 app.use("/auth",authRouter)
 
+import download from "./routes/download.js"
+app.use("/download",download)
+
+// loading controlToken 
+import controlToken from "./middlewares/analizToken.js" 
+app.use("/controlToken",controlToken)
+
+
 
 app.use( (error,req,res,next) => {
-	if([400,401,403,413,415].includes(error.status)) return res.status(error.status).send(error)
+	if([400,401,403,404,409,413,415,].includes(error.status)) return res.status(error.status).send(error)
 
 		fs.appendFileSync(
 			path.join(process.cwd(), 'log.txt'),
@@ -40,6 +51,8 @@ app.use( (error,req,res,next) => {
 
 	return res.status(500).send(new ServerError(""))
 })
+
+
 
 
 

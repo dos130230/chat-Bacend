@@ -8,8 +8,8 @@
   let sekund = ("0" + date.getSeconds()).slice(-2);
 
   let sana = [date.getFullYear(), mnth, day].join("-");
-  let vaqat = [hours, minut, sekund].join(":");
-  return sana+" | " +vaqat
+  let vaqat = [hours, minut].join(":");
+  return vaqat
 }
 
 

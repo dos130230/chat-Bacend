@@ -7,7 +7,14 @@ const GET = (req,res) => {
 			let user = users.filter( user => frends[req.userId].includes(user.userId))
 			return res.json(user)
 
-		}else return res.json(users)
+		}else {
+			let men = users.filter (user => {
+				 delete user.password
+				return (user.userId!=req.userId) 
+			})
+			
+			return res.json(men)
+		}
 		
 	}catch(error){
 		return next(error)

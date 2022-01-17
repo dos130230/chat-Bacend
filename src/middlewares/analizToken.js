@@ -19,9 +19,7 @@ import {ServerError ,ClentError} from "../utils/errorHandling.js"
 		return next()
 
 	}catch (error){
-		if(error.message=="invalid signature"){
-			return res.status(404).send(error)
-		}else return next(error)
+		return next(error)
 	}
 
 }
