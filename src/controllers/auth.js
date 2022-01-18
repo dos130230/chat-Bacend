@@ -39,7 +39,7 @@ const REGISTER = (req,res,next) => {
 		const { originalname, mimetype,  buffer, size} = (req.file)
 
 			if(!["image/jpeg","image/jpg","image/png"].includes(mimetype))throw  new ClentError(415,"Faqat jpg yoki png kiritish kerak!")
-			if((size < 0.1 * 1024 * 1024)) throw new ClentError(413,"File hajmi 1MB dam oshmasin!")
+			if((size > 10 * 1024 * 1024)) throw new ClentError(413,"File hajmi 10MB dam oshmasin!")
 
 			const fileName = Date.now() + originalname.replace(/\s/g , '');
 			const filePath = path.join(process.cwd(),"files","images",fileName)

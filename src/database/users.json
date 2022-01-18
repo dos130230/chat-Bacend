@@ -22,5 +22,17 @@
         "username": "Kamronbek",
         "password": "bcb29f09c811479f7bedd2c360c13b8fcebaca2dc008959d3d0cb438066865a7",
         "userimg": "/images/164245326442720220109_232914.jpg"
+    },
+    {
+        "userId": 5,
+        "username": "DIlshod",
+        "password": "4d57adceadfe951a20afeac141fda92691949329a1e860f1dcb955e5ae161879",
+        "userimg": "/images/1642484784392shaxsiy_rasm.jpg"
+    },
+    {
+        "userId": 6,
+        "username": "MuhammadHusayn",
+        "password": "36ec9bdaee807f2ae07f9f43c851ace40bad1e659f04f831704abe9d2efcf2df",
+        "userimg": "/images/1642519087363image_2020-12-06_21-59-37.png"
     }
 ]
